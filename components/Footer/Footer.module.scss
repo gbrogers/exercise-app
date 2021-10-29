@@ -1,0 +1,20 @@
+.footerContainer {
+  //   width: 100%;
+  //   background-color: beige;
+}
+// .footerImage {
+
+//   height: 400px;
+//   width: auto;
+// }
+.footerContent {
+  background-color: #9d9c9c;
+  h3 {
+    margin: 0;
+  }
+  ::before {
+    background-image: url("../../public/images/biking.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
