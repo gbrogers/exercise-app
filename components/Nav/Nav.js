@@ -6,10 +6,10 @@ export default function Nav() {
     <div className={styles.nav}>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/">Login</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/signup">Sign Up</Link>
         </li>
       </ul>
     </div>

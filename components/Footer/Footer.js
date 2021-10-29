@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.footerContent}>
         <h3>This is a Footer</h3>
         <div>
-          <div>
+          <div className={styles.titleLogo}>
             <div>App Logo</div>
             <h3>App Name</h3>
           </div>
@@ -19,7 +19,7 @@ export default function Footer() {
               JavaScript, HTML5, SASS, Sequelize, Axios, and Bcrypt.
               Personalized resources generated from Health.gov API.
             </p>
-            <div>
+            <div className={styles.socialIcons}>
               <a>LinkedIn</a>
               <a>GitHub</a>
               <a>Portfolio</a>
