@@ -25,12 +25,12 @@ export default function Nav() {
         <div>
           <li>
             <Link href="/login">
-              <a>Login</a>
+              <a className={styles.loginBtn}>Login</a>
             </Link>
           </li>
           <li>
             <Link href="/signup">
-              <a>Sign Up</a>
+              <a className={styles.signupBtn}>Sign Up</a>
             </Link>
           </li>
         </div>
