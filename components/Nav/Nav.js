@@ -1,5 +1,7 @@
 import styles from "./Nav.module.scss";
 import Link from "next/link";
+import Logo from "../../public/images/mtn_logo.png";
+import Image from "next/image";
 
 export default function Nav() {
   return (
@@ -7,19 +9,31 @@ export default function Nav() {
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <Image
+              alt="Logo"
+              src={Logo}
+              // layout="fill"
+              quality={100}
+              className={styles.logo}
+              width={75} //automatically provided
+              height={50} //automatically provided
+              blurDataURL="data:..." //automatically provided
+              placeholder="blur" // Optional blur-up while loading
+            />
           </Link>
         </li>
-        <li>
-          <Link href="/login">
-            <a>Login</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/signup">
-            <a>Sign Up</a>
-          </Link>
-        </li>
+        <div>
+          <li>
+            <Link href="/login">
+              <a>Login</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/signup">
+              <a>Sign Up</a>
+            </Link>
+          </li>
+        </div>
       </ul>
     </div>
   );
